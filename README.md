@@ -1,2 +1,3 @@
 # Dynamic-World-Viewer
-Proyecto en GEE para visualizar Dynamic World Viewer y sentinel 2 de manera simultánea
+
+Script desarrollado en Google Earth Engine para visualizar la clasificación mensual de coberturas de Dynamic World junto con mosaicos Sentinel-2 libres de nubes. El usuario puede seleccionar una fecha mediante un slider temporal e introducir coordenadas para cargar automáticamente imágenes Sentinel-2 cercanas a dicha fecha. El sistema busca escenas con menos del 20% de nubes y comprueba que existan píxeles visibles en el punto seleccionado. Si no encuentra imágenes válidas, amplía progresivamente el rango temporal de búsqueda. Además, el script genera mosaicos priorizando las imágenes más cercanas temporalmente y permite exportar las clases de Dynamic World como archivos SHP. Incluye una interfaz interactiva con leyenda, panel de información y actualización automática entre Dynamic World y Sentinel-2.
